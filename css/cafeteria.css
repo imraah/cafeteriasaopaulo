@@ -8,7 +8,19 @@ da página. Margens externas e internas */
 
 /* Vamos adicionar uma imagem ao fundo do header */
 header {
-    background-image: url("../img/cafeteria1.jpg");
-    height: 400px;
+    background-image: url("../img/coffeeshop.jpg");
+    /* Ajustar o tamanho da imagem em 100% de largura */
+    background-size: 100%;
+    /* Ajustar a posição da imagem em x e y */
+    background-position: 0px -350px;
+
+    height: 500px;
+    padding: 20px;
+    
+}
+h1{
+    /* Mudar a cor da letra */
+    color: whitesmoke;
+    
     
 }
