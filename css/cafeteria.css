@@ -1,3 +1,7 @@
+/* Importando as fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* Zerar as margens de todos os elementos 
 da página. Margens externas e internas */
 * {
@@ -18,9 +22,55 @@ header {
     padding: 20px;
     
 }
+nav{
+    /* Tornando o conteúdo da nave flexível, isso permite que os elementos fiquem um ao lado do outro */
+    display: flex;
+    /* Alinhamento vertical dos elementos que estão na nav */
+    align-items: center;
+
+}
+
 h1{
     /* Mudar a cor da letra */
     color: whitesmoke;
-    
-    
+    /* Alterar o tipo de letra */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    /* Alterar o tamanho da caixa (alta ou baixa) */
+    text-transform: uppercase;
+    margin-right: 225px;
+
+  
 }
+ul{
+    /* Retirar o marcador da lista */
+    list-style: none;
+}
+header ul li{
+    /* Vamos ajustar a disposição(display) dos itens das lista em formato de linha */
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 6px;
+}
+header ul li:hover{
+background-color: #3e2723;
+}
+header ul li a{
+    color: whitesmoke;
+    /* Vamos retirar o underline(sublinhado) */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h2{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 125px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25pt;
+    font-weight: 500;
+    text-shadow: 5px 10px 5px black;
+
+}
+
+
