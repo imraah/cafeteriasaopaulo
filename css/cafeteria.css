@@ -12,13 +12,13 @@ da página. Margens externas e internas */
 
 /* Vamos adicionar uma imagem ao fundo do header */
 header {
-    background-image: url("../img/coffeeshop.jpg");
+    background-image: url("../img/bannercafe.png");
     /* Ajustar o tamanho da imagem em 100% de largura */
     background-size: 100%;
     /* Ajustar a posição da imagem em x e y */
-    background-position: 0px -350px;
+    background-position: 0px -800px;
 
-    height: 500px;
+    height: 600px;
     padding: 20px;
     
 }
@@ -27,7 +27,6 @@ nav{
     display: flex;
     /* Alinhamento vertical dos elementos que estão na nav */
     align-items: center;
-
 }
 
 h1{
@@ -40,7 +39,6 @@ h1{
     text-transform: uppercase;
     margin-right: 225px;
 
-  
 }
 ul{
     /* Retirar o marcador da lista */
@@ -65,12 +63,36 @@ header ul li a{
 header h2{
     color: whitesmoke;
     text-align: center;
-    margin-top: 125px;
+    margin-top: 200px;
     font-family: "Montserrat", sans-serif;
-    font-size: 25pt;
-    font-weight: 500;
-    text-shadow: 5px 10px 5px black;
+    font-size: 30pt;
+    font-weight: 600;
+}
+header p{
+    font-family:"Montserrat", sans-serif;;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
 
+footer{
+   background-color: #3e2723;
+   display: flex;
+   justify-content: space-between;
+   padding: 60px;
+   padding-top: 60px;
+   padding-bottom: 50px;
+   font-family: "Montserrat", sans-serif;
+   font-size: 15pt;
+   color: whitesmoke;
+}
+
+footer #rede li{
+    /* Colocar as redes em linha */
+    display: inline-block;
+    margin-right: 20px; 
 }
 
 
