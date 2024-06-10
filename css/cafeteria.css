@@ -95,4 +95,41 @@ footer #rede li{
     margin-right: 20px; 
 }
 
+/* ----------------------------------- formatação da página index */
+main h2{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #3e2723;
+    margin: 50px;
+}
+
+main #home p{
+    font-family: "Montserrat", sans-serif;
+    margin: 0px 50px 50px 50px;
+    text-align: justify;
+    font-size: 12pt;
+    /* O comando line-height define a altura da linha (espaçamento entre linhas). Estamos usando uma altura de 1,5, ou seja, o tamanho da fontemais meio do tamanho da fonte */
+    line-height: 18pt;
+}
+
+main #imghome img{
+    margin: 50px;
+    width: 650px;
+    height: 450px;
+    border-radius: 30px;
+    /* Vamos aplicar um efeito de transparência a imagem, usando o comando opacity que varia entre 0 e 1, ou seja, se você aplicar 0.6, significa que esta usando 60% de opacidade. isto representa 60% de visibilidade */
+    opacity: 0.8;
+    /* O comando transition realiza uma animação de transição, que você pode configurar o time de transição e o tempo da transição */
+    transition: ease 1s;
+}
+
+main #imghome img:hover{
+    opacity: 1;
+}
+
+main #imghome{
+    text-align: center;
+}
+
+
 
