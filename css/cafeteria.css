@@ -1,243 +1,315 @@
 /* Importando as fontes do google */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Zerar as margens de todos os elementos 
 da página. Margens externas e internas */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
- html{
- scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* Vamos adicionar uma imagem ao fundo do header */
 header {
-    background-image: url("../img/bannercafe.png");
-    /* Ajustar o tamanho da imagem em 100% de largura */
-    background-size: 100%;
-    /* Ajustar a posição da imagem em x e y */
-    background-position: 0px -800px;
+  background-image: url("../img/bannercafe.png");
+  /* Ajustar o tamanho da imagem em 100% de largura */
+  background-size: 100%;
+  /* Ajustar a posição da imagem em x e y */
+  background-position: 0px -800px;
 
-    height: 600px;
-    padding: 20px;
-    
+  height: 600px;
+  padding: 20px;
 }
-nav{
-    /* Tornando o conteúdo da nave flexível, isso permite que os elementos fiquem um ao lado do outro */
-    display: flex;
-    /* Alinhamento vertical dos elementos que estão na nav */
-    align-items: center;
-}
-
-h1{
-    /* Mudar a cor da letra */
-    color: whitesmoke;
-    /* Alterar o tipo de letra */
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 20pt;
-    /* Alterar o tamanho da caixa (alta ou baixa) */
-    text-transform: uppercase;
-    margin-right: 225px;
-
-}
-ul{
-    /* Retirar o marcador da lista */
-    list-style: none;
-}
-header ul li{
-    /* Vamos ajustar a disposição(display) dos itens das lista em formato de linha */
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 6px;
-}
-header ul li:hover{
-background-color: #3e2723;
-}
-header ul li a{
-    color: whitesmoke;
-    /* Vamos retirar o underline(sublinhado) */
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-header h2{
-    color: whitesmoke;
-    text-align: center;
-    margin-top: 200px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 30pt;
-    font-weight: 600;
-}
-header p{
-    font-family:"Montserrat", sans-serif;;
-    color: whitesmoke;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+nav {
+  /* Tornando o conteúdo da nave flexível, isso permite que os elementos fiquem um ao lado do outro */
+  display: flex;
+  /* Alinhamento vertical dos elementos que estão na nav */
+  align-items: center;
 }
 
-footer{
-   background-color: #3e2723;
-   display: flex;
-   justify-content: space-between;
-   padding: 60px;
-   padding-top: 60px;
-   padding-bottom: 50px;
-   font-family: "Montserrat", sans-serif;
-   font-size: 15pt;
-   color: whitesmoke;
+h1 {
+  /* Mudar a cor da letra */
+  color: whitesmoke;
+  /* Alterar o tipo de letra */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+  /* Alterar o tamanho da caixa (alta ou baixa) */
+  text-transform: uppercase;
+  margin-right: 225px;
+}
+ul {
+  /* Retirar o marcador da lista */
+  list-style: none;
+}
+header ul li {
+  /* Vamos ajustar a disposição(display) dos itens das lista em formato de linha */
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 6px;
+  transition: ease 1s;
+}
+header ul li:hover {
+  background-color: #3e2723;
+  border-radius: 30px;
+}
+header ul li a {
+  color: whitesmoke;
+  /* Vamos retirar o underline(sublinhado) */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header h2 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30pt;
+  font-weight: 600;
+}
+header p {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
-footer #rede li{
-    /* Colocar as redes em linha */
-    display: inline-block;
-    margin-right: 20px; 
+footer {
+  background-color: #3e2723;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15pt;
+  color: whitesmoke;
+}
+
+footer #rede li {
+  /* Colocar as redes em linha */
+  display: inline-block;
+  margin-right: 20px;
 }
 
 /* ----------------------------------- formatação da página index */
-main h2{
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    color: #3e2723;
-    margin: 50px;
+main h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #3e2723;
+  margin: 50px;
 }
 
-main #home p{
-    font-family: "Montserrat", sans-serif;
-    margin: 0px 50px 50px 50px;
-    text-align: justify;
-    font-size: 12pt;
-    /* O comando line-height define a altura da linha (espaçamento entre linhas). Estamos usando uma altura de 1,5, ou seja, o tamanho da fontemais meio do tamanho da fonte */
-    line-height: 18pt;
+main #home p {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px 50px 50px 50px;
+  text-align: justify;
+  font-size: 12pt;
+  /* O comando line-height define a altura da linha (espaçamento entre linhas). Estamos usando uma altura de 1,5, ou seja, o tamanho da fontemais meio do tamanho da fonte */
+  line-height: 18pt;
 }
 
-main #imghome img{
-    margin: 50px;
-    width: 650px;
-    height: 450px;
-    border-radius: 30px;
-    /* Vamos aplicar um efeito de transparência a imagem, usando o comando opacity que varia entre 0 e 1, ou seja, se você aplicar 0.6, significa que esta usando 60% de opacidade. isto representa 60% de visibilidade */
-    opacity: 0.8;
-    /* O comando transition realiza uma animação de transição, que você pode configurar o time de transição e o tempo da transição */
-    transition: ease 1s;
+main #imghome img {
+  margin: 50px;
+  width: 650px;
+  height: 450px;
+  border-radius: 30px;
+  /* Vamos aplicar um efeito de transparência a imagem, usando o comando opacity que varia entre 0 e 1, ou seja, se você aplicar 0.6, significa que esta usando 60% de opacidade. isto representa 60% de visibilidade */
+  opacity: 0.8;
+  /* O comando transition realiza uma animação de transição, que você pode configurar o time de transição e o tempo da transição */
+  transition: ease 1s;
 }
 
-main #imghome img:hover{
-    opacity: 1;
+main #imghome img:hover {
+  opacity: 1;
 }
 
-main #imghome{
-    text-align: center;
+main #imghome {
+  text-align: center;
 }
 
 /*--------- Formatação da página cardápio---------- */
-main #categoriacardapio{
-width: 80%;
-/* Vamos centralizar a categoria modificando a margem da esquerda e da direita com auto de automático */
-margin-left: auto;
-margin-right: auto;
-/* Aplicar a disposição flex para deixar as imagens uma ao lado da outra */
-display: flex;
-/* Alinhar o conteúdo ao centro */
-justify-content: center;
-align-items: center;
-margin-top: -100px;
+main #categoriacardapio {
+  width: 80%;
+  /* Vamos centralizar a categoria modificando a margem da esquerda e da direita com auto de automático */
+  margin-left: auto;
+  margin-right: auto;
+  /* Aplicar a disposição flex para deixar as imagens uma ao lado da outra */
+  display: flex;
+  /* Alinhar o conteúdo ao centro */
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
 }
 
-.itemcardapio img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: block;
-    box-shadow: 0px 0px 20px black;
-    margin-bottom: 30px;
+.itemcardapio img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0px 0px 20px black;
+  margin-bottom: 30px;
 }
 
-.itemcardapio{
-    text-align: center;
-    margin: 50px;
+.itemcardapio {
+  text-align: center;
+  margin: 50px;
 }
 
-.itemcardapio a{
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
+.itemcardapio a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
 }
 
-.linha{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: center;
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
 }
 
-
-
-.item{
-    width: 25%;
-    display: flex;
-    margin: 30px;
+.item {
+  width: 25%;
+  display: flex;
+  margin: 30px;
 }
 
-
-.item img{
-    width: 200px;
-    height: 150px;
-    border-radius: 10%;
+.item img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10%;
 }
 
-.item div h3{
-    font-family:"Montserrat", sans-serif;
-    font-size: 12pt;
-    margin: 5px;
+.item div h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+  margin: 5px;
 }
 
-.item div p{
-    font-family: "Montserrat", sans-serif;
-    margin: 5px;
-    font-size: 10pt;
-    line-height: 15pt;
+.item div p {
+  font-family: "Montserrat", sans-serif;
+  margin: 5px;
+  font-size: 10pt;
+  line-height: 15pt;
 }
 
-#cafes h2, #salgados h2, #doces h2, #sucos h2{
-    font-size: 30px;
-    margin-left: 150px;
+#cafes h2,
+#salgados h2,
+#doces h2,
+#sucos h2 {
+  font-size: 30px;
+  margin-left: 150px;
 }
 
 /* Página Quem somos */
 
-main p{
-    font-family: "Montserrat", sans-serif;
-    font-size: 13pt;
-    line-height: 20pt;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+main p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13pt;
+  line-height: 20pt;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 
-#video{
-    text-align: center;
+#video {
+  text-align: center;
 }
 
-#video iframe{
-    width: 80%;
-    height: 600px;
-    margin: 50px;
+#video iframe {
+  width: 80%;
+  height: 600px;
+  margin: 50px;
 }
 
-#mapa{
-    text-align: center;
+#mapa {
+  text-align: center;
 }
 
-#mapa iframe{
-    width: 90%;
-    height: 600px;
-    margin: 60px;
+#mapa iframe {
+  width: 90%;
+  height: 600px;
+  margin: 60px;
+}
+
+/* ---------------Contato---------------- */
+form {
+  width: 40%;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  margin-bottom: 40px;
+  /* retira a borda ativa do input */
+  outline: none;
+  border-bottom: 2px solid silver;
+  font-family: "Montserrat", sans-serif;
+}
+
+select {
+  width: 30%;
+  font-family: "Montserrat", sans-serif;
+}
+
+textarea {
+  width: 50%;
+  height: 200px;
+  outline-color: #3e2723;
+  /* bloqueia o redimensionamento da textarea */
+  resize: none;
+  border: 2px solid silver;
+  position: absolute;
+  left: 740px;
+  top: 760px;
+}
+
+form span {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  left: 740px;
+  top: 970px;
+}
+
+input[type="submit"] {
+  padding: 10px 30px;
+  border: 0;
+  background-color: none;
+  /* mouse vira uma mão (apontador) */
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 50px auto;
+  position: absolute;
+  left: 1430px;
+  top: 960px;
+}
+
+/* formatação para o contato whatsapp */
+
+#whatsapp {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 130px;
+  right: 30px;
+}
+
+#whatsapp img {
+  width: 100%;
 }
