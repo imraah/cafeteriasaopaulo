@@ -144,7 +144,7 @@ main #categoriacardapio {
   /* Alinhar o conteúdo ao centro */
   justify-content: center;
   align-items: center;
-  margin-top: -100px;
+  margin-top: 75px;
 }
 
 .itemcardapio img {
@@ -166,7 +166,17 @@ main #categoriacardapio {
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color:#3e2723;
+  font-weight: 600;
+  border: solid 2px #3e2723;
+  border-radius: 80px;
+  padding: 10px 25px;
+  transition: ease-in-out 0.4s;
+}
+
+.itemcardapio a:hover{
+  background-color: #3e2723;
+  color: white;
 }
 
 .linha {
@@ -206,7 +216,7 @@ main #categoriacardapio {
 #doces h2,
 #sucos h2 {
   font-size: 30px;
-  margin-left: 150px;
+  margin-left: 130px;
 }
 
 /* Página Quem somos */
@@ -271,32 +281,32 @@ select {
 textarea {
   width: 50%;
   height: 200px;
-  outline-color: #3e2723;
+  outline: none;
   /* bloqueia o redimensionamento da textarea */
   resize: none;
   border: 2px solid silver;
   position: absolute;
-  left: 740px;
+  left: 620px;
   top: 760px;
 }
 
 form span {
   font-family: "Montserrat", sans-serif;
   position: absolute;
-  left: 740px;
+  left: 620px;
   top: 970px;
 }
 
 input[type="submit"] {
   padding: 10px 30px;
   border: 0;
-  background-color: none;
+  background-color: silver;
   /* mouse vira uma mão (apontador) */
   cursor: pointer;
   display: block;
   margin: 10px auto 50px auto;
   position: absolute;
-  left: 1430px;
+  left: 1197px;
   top: 960px;
 }
 
@@ -312,4 +322,24 @@ input[type="submit"] {
 
 #whatsapp img {
   width: 100%;
+}
+
+#home{
+display:flex;
+justify-content: center;
+}
+
+#home img {
+  width: 80%;
+}
+
+#sucos .linha{
+  margin-bottom: 50px;
+}
+
+#trans{
+  position: absolute;
+  width: 100%;
+
+
 }
