@@ -8,6 +8,7 @@ da página. Margens externas e internas */
   padding: 0px;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +24,7 @@ header {
   height: 600px;
   padding: 20px;
 }
+
 nav {
   /* Tornando o conteúdo da nave flexível, isso permite que os elementos fiquem um ao lado do outro */
   display: flex;
@@ -40,10 +42,12 @@ h1 {
   text-transform: uppercase;
   margin-right: 225px;
 }
+
 ul {
   /* Retirar o marcador da lista */
   list-style: none;
 }
+
 header ul li {
   /* Vamos ajustar a disposição(display) dos itens das lista em formato de linha */
   display: inline-block;
@@ -52,16 +56,19 @@ header ul li {
   padding: 6px;
   transition: ease 1s;
 }
+
 header ul li:hover {
   background-color: #3e2723;
   border-radius: 30px;
 }
+
 header ul li a {
   color: whitesmoke;
   /* Vamos retirar o underline(sublinhado) */
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 header h2 {
   color: whitesmoke;
   text-align: center;
@@ -70,6 +77,7 @@ header h2 {
   font-size: 30pt;
   font-weight: 600;
 }
+
 header p {
   font-family: "Montserrat", sans-serif;
   color: whitesmoke;
@@ -116,8 +124,8 @@ main #home p {
 
 main #imghome img {
   margin: 50px;
-  width: 650px;
-  height: 450px;
+  width: 550px;
+  height: 350px;
   border-radius: 30px;
   /* Vamos aplicar um efeito de transparência a imagem, usando o comando opacity que varia entre 0 e 1, ou seja, se você aplicar 0.6, significa que esta usando 60% de opacidade. isto representa 60% de visibilidade */
   opacity: 0.8;
@@ -166,7 +174,7 @@ main #categoriacardapio {
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color:#3e2723;
+  color: #3e2723;
   font-weight: 600;
   border: solid 2px #3e2723;
   border-radius: 80px;
@@ -174,7 +182,7 @@ main #categoriacardapio {
   transition: ease-in-out 0.4s;
 }
 
-.itemcardapio a:hover{
+.itemcardapio a:hover {
   background-color: #3e2723;
   color: white;
 }
@@ -324,22 +332,68 @@ input[type="submit"] {
   width: 100%;
 }
 
-#home{
-display:flex;
-justify-content: center;
+#home {
+  display: flex;
+  justify-content: center;
 }
 
 #home img {
   width: 80%;
 }
 
-#sucos .linha{
+#sucos .linha {
   margin-bottom: 50px;
 }
 
-#trans{
+#trans {
   position: absolute;
   width: 100%;
 
 
 }
+
+#faixa h1{
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+#faixa h2{
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+#faixa {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #3e2723;
+}
+
+  #faixa div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  #faixa div div{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    
+  }
+
+  #faixa div img{
+    width: 32px;
+    height: 32px;
+  }
+
+.mainHome p{
+  width: 70%;
+}
+
+  
+
